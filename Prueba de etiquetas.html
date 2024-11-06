@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Desplegable</title>
+    <style>
+        /* Estilos básicos del menú */
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+        }
+        
+        .menu > li {
+            position: relative;
+            display: inline-block;
+        }
+
+        .menu > li > a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu > li > a:hover {
+            background-color: #555;
+        }
+
+        /* Estilos para el submenú */
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #555;
+        }
+
+        .submenu li a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .submenu li a:hover {
+            background-color: #777;
+        }
+
+        /* Mostrar el submenú cuando el usuario pasa el cursor */
+        .menu > li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú principal -->
+    <ul class="menu">
+        <li><a href="#home">Inicio</a></li>
+        <li>
+            <a href="#servicios">Servicios</a>
+            <!-- Submenú desplegable -->
+            <ul class="submenu">
+                <li><a href="#consultoria">Consultoría</a></li>
+                <li><a href="#desarrollo">Desarrollo</a></li>
+                <li><a href="#soporte">Soporte</a></li>
+            </ul>
+        </li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+</body>
+</html>
