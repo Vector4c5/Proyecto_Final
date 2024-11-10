@@ -1,0 +1,81 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #404142; /* Color dorado claro de fondo */
+    color: #BF9C5A; /* Color del texto */
+    max-width: 1500px;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado estilo pergamino */
+.Encabezado {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    font-family: 'Courgette', serif;
+    font-size: 2rem;
+    color: #D9D9D9; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Barra de navegación */
+.Barra {
+    
+    display: flex;
+    background: linear-gradient(180deg, #0D0D0D, #363535); /* Dorado más oscuro */
+    padding: 3px;
+    justify-content: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la barra */
+    margin-bottom: 15px;
+    
+}
+
+/* Botones de la barra de navegación */
+.nav-button {
+    color: white;
+    background: none;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-button:hover {
+    color: #c8a647;
+    border-bottom: 2px solid #c8a647;
+    background: transparent; 
+    transition: all .5s ease;
+}
+
+/* Sección de contenido */
+.content {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    border: 10px
+    
+    
+}
+
+/* Estilos de cada sección de contenido */
+.content-section {
+    display: none; 
+    background-color: #2C3742; /* Fondo */
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.content-section.active {
+    display: block; /* Mostramos solo la sección activa */
+}
+
