@@ -19,19 +19,51 @@
 <!-- Sección de contenido -->
      <div id="inicio" class="content-section">
         <div class='Cuadricula'>
-          <h1 class="Encabezado">Herramientas Para Juegos De Mesa</h1>
+          <h1 class="Encabezado">La Caberna</h1>
             <div class="Contenido">
-             <h2 class="subtitulo">Bienvenido</h2>
-             <p>Bienvenido a la plataforma de creación de juegos de rol. Aquí encontrarás las herramientas básicas para crear tus personajes, definir habilidades, equipos y consultar las reglas.</p> 
+                    <div class="SubContenido">
+                         <div class="Parrafos">
+                            <h2 class="subtitulo">Bienvenido</h2> 
+                            <p>Bienvenido¿Estas en busca de aventuras pero no sabes por donde empezas? Entonces estas en el lugar indicado, Bienvenido a la caberna! Aqui podras encontrar todas las herramientas necesarias para iniciar tu partida o crear tu personaje de rol</p>
+                        </div> 
+                         <img src="Mona_China.jpeg" id="img_Bienvenida" alt="Bienvenida">
+
+                    </div>
             </div>
         </div>
     </div>
-    
     <div id="Creacion_P" class="content-section">
         <div class='Cuadricula'>
-            <h1 class="Encabezado">Creacion De Personaje</h1>
+            <h1 class="Encabezado">Hojas De Personaje</h1>
             <div class="Contenido">
-                <div id="Hoja1" class="content-section"></div>
+                <button class="nav-button" onclick="mostrarContenido('Hoja1')">Hoja de personaje</button>
+                <button class="nav-button" onclick="mostrarContenido('Creacion_P')">CREACION DE PERSONAJE</button>
+                <button class="nav-button" onclick="mostrarContenido('Creacion_Pa')">CREACION DE PARTIDA</button>
+                <div id="Hoja1" class="content-section">
+                    <div class="Cuadricula">
+                        <h2 class="Encabezado">Creación de Partida</h2>
+                        <div class="Contenido">
+                            <form>
+                                <label for="Partida-nombre">Nombre De Partida:</label>
+                                <input type="text" id="Partida-nombre" name="Partida-nombre" required><br>
+                                <label for="tipo-Partida">Tipo de Partida:</label>
+                            <select id="tipo-Partida" name="tipo-Partida">
+                                <option value="Campaña">Campaña</option>
+                                <option value="One-Shot">One-Shot</option>
+                            </select><br>
+                            <label for="tematica-Partida">Tematica de Partida:</label>
+                            <select id="tematica-Partida" name="tematica-Partida">
+                                <option value="Aventura-Aventura">Accion y Aventura</option>
+                                <option value="Fantasia">Fantasia</option>
+                                <option value="Misterio">Misterio</option>
+                                <option value="Supervivencia">Supervivencia</option>
+                            </select><br>
+                            <label for="Desarrollo de Partida">Desarrollo de Partida:</label><br>
+                            <textarea id="Desarrollo de Partida" name="Desarrollo de Partida"></textarea>
+                        </form>
+                        </div>
+                    </div>
+                </div>
                 <form>
                     <label for="nombre">Nombre del personaje:</label>
                     <input type="text" id="nombre" name="nombre" required>

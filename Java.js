@@ -17,4 +17,3 @@ function mostrarContenido(seccionId) {
 window.onload = function() {
     mostrarContenido('inicio');
 };
-
