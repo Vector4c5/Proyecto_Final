@@ -16,90 +16,69 @@
     <button class="nav-button" onclick="mostrarContenido('Creacion_Pa')">CREACION DE PARTIDA</button>
 </nav>
 
-<!-- Sección de contenido -->
-     <div id="inicio" class="content-section">
-        <div class='Cuadricula'>
-          <h1 class="Encabezado">La Caberna</h1>
-            <div class="Contenido">
-                    <div class="SubContenido">
-                         <div class="Parrafos">
-                            <h2 class="subtitulo">Bienvenido</h2> 
-                            <p>Bienvenido¿Estas en busca de aventuras pero no sabes por donde empezas? Entonces estas en el lugar indicado, Bienvenido a la caberna! Aqui podras encontrar todas las herramientas necesarias para iniciar tu partida o crear tu personaje de rol</p>
-                        </div> 
-                         <img src="Mona_China.jpeg" id="img_Bienvenida" alt="Bienvenida">
-
-                    </div>
+<!----------------------- Sección de inicio ------------------>
+ <div id="inicio" class="content-section">
+     <div class='Cuadricula_inicio'>
+        <h1 class="Encabezado_inicio">La Caberna</h1>
+        <div class="Contenido_inicio">
+            <div class="SubContenido_inicio">
+                <div class="Parrafos_inicio">
+                    <h2 class="subtitulos_inicio">Bienvenido</h2> 
+                    <p>Bienvenido¿Estas en busca de aventuras pero no sabes por donde empezas? Entonces estas en el lugar indicado, Bienvenido a la caberna! Aqui podras encontrar todas las herramientas necesarias para iniciar tu partida o crear tu personaje de rol</p>
+                </div> 
+                <img src="Mona_China.jpeg" id="img_Bienvenida" alt="Bienvenida">
             </div>
         </div>
     </div>
-    <div id="Creacion_P" class="content-section">
-        <div class='Cuadricula'>
-            <h1 class="Encabezado">Hojas De Personaje</h1>
-            <div class="Contenido">
-                <button class="nav-button" onclick="mostrarContenido('Hoja1')">Hoja de personaje</button>
-                <button class="nav-button" onclick="mostrarContenido('Creacion_P')">CREACION DE PERSONAJE</button>
-                <button class="nav-button" onclick="mostrarContenido('Creacion_Pa')">CREACION DE PARTIDA</button>
-                <div id="Hoja1" class="content-section">
-                    <div class="Cuadricula">
-                        <h2 class="Encabezado">Creación de Partida</h2>
-                        <div class="Contenido">
-                            <form>
-                                <label for="Partida-nombre">Nombre De Partida:</label>
-                                <input type="text" id="Partida-nombre" name="Partida-nombre" required><br>
-                                <label for="tipo-Partida">Tipo de Partida:</label>
-                            <select id="tipo-Partida" name="tipo-Partida">
-                                <option value="Campaña">Campaña</option>
-                                <option value="One-Shot">One-Shot</option>
-                            </select><br>
-                            <label for="tematica-Partida">Tematica de Partida:</label>
-                            <select id="tematica-Partida" name="tematica-Partida">
-                                <option value="Aventura-Aventura">Accion y Aventura</option>
-                                <option value="Fantasia">Fantasia</option>
-                                <option value="Misterio">Misterio</option>
-                                <option value="Supervivencia">Supervivencia</option>
-                            </select><br>
-                            <label for="Desarrollo de Partida">Desarrollo de Partida:</label><br>
-                            <textarea id="Desarrollo de Partida" name="Desarrollo de Partida"></textarea>
-                        </form>
-                        </div>
-                    </div>
-                </div>
+</div>
+
+<div id="Creacion_P" class="content-section">
+    <div class='Cuadricula_Personaje'>
+        <h1 class="Encabezado_Personaje">Hojas De Personaje</h1>
+        <div class="Caja_Hojas">
                 <form>
-                    <label for="nombre">Nombre del personaje:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <label for="raza">Raza:</label>
-                    <select id="raza" name="raza">
-                        <optgroup label="Razas Clasicas">
-                            <option value="humano">Humano</option>
-                            <option value="elfo">Elfo</option>
-                            <option value="enano">Enano</option>
-                            <option value="Mediano">Mediano</option>
-                            <option value="Gnomos">Gnomo</option>
-                        </optgroup>
-                        <optgroup label="Razas Exoticas">
-                            <option value="Orco">Orco</option>
-                            <option value="Semielfos">Semielfo</option>
-                            <option value="Tiflins">Tiflin</option>
-                            <option value="Dacronidos">Dacronido</option>
-                            <option value="Medio-Orcos">Medio-Orco</option>
-                            <option value="Aasimar">Aasimar</option>
-                        </optgroup>
-                        <optgroup label="Razas Adicionales o Opcionales">
-                            <option value="Genasi">Genasi</option>
-                            <option value="Firbolgs">Firbolg</option>
-                            <option value="Gith">Gith</option>
-                            <option value="Tabaxi">Tabaxi</option>
-                            <option value="Kenku">Kenku</option>
-                       </optgroup>
-                       <optgroup label="Razas De Tasha's Cauldron Of Everything Y Monsters Of The Multiverse">
-                        <option value="Hadozee">Hadozee</option>
-                        <option value="Hobgoblins">Hobgoblins</option>
-                        <option value="Loxodones">Loxodones</option>
-                        <option value="Yuan-ti">Yuan-ti</option>
-                       </optgroup>
-                    </select><br>
-                    <label for="clase">Clase:</label>
-                    <select id="clase" name="clase">
+                    <!-------------------- Sección de Labels ------------------>
+                    <div class="Text_formulario">
+                        <label for="nombre">Nombre del personaje:</label><br> 
+                        <label for="raza">Raza:</label><br>
+                        <label for="clase">Clase:</label><br>
+                        <label for="descripcion">Historia Del Personaje:</label><br>
+                    </div>
+                    <!-------------------- Sección de inputs ------------------>
+                    <div class="formulario">
+                        <input type="text" id="nombre" name="nombre" required>
+                        <select id="raza" name="raza">
+                            <optgroup label="Razas Clasicas">
+                                <option value="humano">Humano</option>
+                                <option value="elfo">Elfo</option>
+                                <option value="enano">Enano</option>
+                                <option value="Mediano">Mediano</option>
+                                <option value="Gnomos">Gnomo</option>
+                            </optgroup>
+                            <optgroup label="Razas Exoticas">
+                                <option value="Orco">Orco</option>
+                                <option value="Semielfos">Semielfo</option>
+                                <option value="Tiflins">Tiflin</option>
+                                <option value="Dacronidos">Dacronido</option>
+                                <option value="Medio-Orcos">Medio-Orco</option>
+                                <option value="Aasimar">Aasimar</option>
+                            </optgroup>
+                            <optgroup label="Razas Adicionales o Opcionales">
+                                <option value="Genasi">Genasi</option>
+                                <option value="Firbolgs">Firbolg</option>
+                                <option value="Gith">Gith</option>
+                                <option value="Tabaxi">Tabaxi</option>
+                                <option value="Kenku">Kenku</option>
+                           </optgroup>
+                           <optgroup label="Razas De Tasha's Cauldron Of Everything Y Monsters Of The Multiverse">
+                            <option value="Hadozee">Hadozee</option>
+                            <option value="Hobgoblins">Hobgoblins</option>
+                            <option value="Loxodones">Loxodones</option>
+                            <option value="Yuan-ti">Yuan-ti</option>
+                           </optgroup>
+                        </select><br>
+
+                        <select id="clase" name="clase">
                         <optgroup label="Tanques">
                             <option value="guerrero">Guerrero (Fighter)</option>
                             <option value="Paladin">Paladín (Paladin)</option>
@@ -119,11 +98,12 @@
                             <option value="Brujo">Brujo (Warlock)</option>
                         </optgroup>
                     </select><br>
-                    <label for="descripcion">Historia Del Personaje:</label><br>
-                    <textarea id="descripcion" name="descripcion"></textarea>
-                </form><br>
+                    <textarea id="descripcion" name="descripcion"></textarea><br>
+                </div>
 
+                </form><br>
             <!-- Sección: Habilidades -->
+             <div class="Habilidades">
                 <h2>Habilidades</h2>
                 <form>
                     <label for="habilidad-nombre">Nombre de la habilidad:</label>
@@ -158,9 +138,11 @@
                     <label for="descripcion-equipo">Descripción del equipo:</label><br>
                     <textarea id="descripcion-equipo" name="descripcion-equipo"></textarea>
                 </form>
+            </div>
         </div>
     </div>
 </div>
+
     <div id="Creacion_Pa" class="content-section">
         <div class="Cuadricula">
             <h2 class="Encabezado">Creación de Partida</h2>
