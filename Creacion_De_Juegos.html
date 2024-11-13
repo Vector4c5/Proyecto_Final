@@ -36,17 +36,23 @@
     <div class='Cuadricula_Personaje'>
         <h1 class="Encabezado_Personaje">Hojas De Personaje</h1>
         <div class="Caja_Hojas">
-                <form>
+                <form class="Cuadricula_form">
+                    <div class="Otro_elemnt">
+                        <p>Aqui ira la imagen</p>
+                    </div>
+                    <div class="Nombre_Pe">
+                    <label for="nombre">Nombre del personaje:</label> 
+                    <input type="text" id="nombre" name="nombre" required>
+                    </div>
                     <!-------------------- Sección de Labels ------------------>
                     <div class="Text_formulario">
-                        <label for="nombre">Nombre del personaje:</label><br> 
+                       
                         <label for="raza">Raza:</label><br>
                         <label for="clase">Clase:</label><br>
                         <label for="descripcion">Historia Del Personaje:</label><br>
                     </div>
                     <!-------------------- Sección de inputs ------------------>
                     <div class="formulario">
-                        <input type="text" id="nombre" name="nombre" required>
                         <select id="raza" name="raza">
                             <optgroup label="Razas Clasicas">
                                 <option value="humano">Humano</option>
