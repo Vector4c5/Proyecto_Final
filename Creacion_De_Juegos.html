@@ -40,49 +40,68 @@
                     <div class="Otro_elemnt">
                         <p>Aqui ira la imagen</p>
                     </div>
-                    <div class="Nombre_Pe">
-                    <label for="nombre">Nombre del personaje:</label> 
-                    <input type="text" id="nombre" name="nombre" required>
+                    <img src="Simbolo_Nordico.jpg" id="Simbolo" alt="Bienvenida">
+                    <div class="seccion_Personal">
+                        <div class="Nombre_Pe">
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" id="nombre" class="" name="nombre" required>
+                        </div>
+                        <div class="Edad">
+                         <label for="Edad">Edad</label>
+                         <input type="text" id="Edad" name="Edad" required>
+                         <label for="Genero">Genero</label>
+                         <select id="Genero" name="Genero">
+                             <option value="Hombre">Hombre</option>
+                             <option value="Mujer">Mujer</option>
+                             <option value="Indistinto">Indistinto</option>
+                         </select>
+                        </div>
+                        
+                        <div class="Raza">
+                            <label for="raza">Raza:</label>
+                            <select id="raza" name="raza">
+                                <optgroup label="Razas Clasicas">
+                                    <option value="humano">Humano</option>
+                                    <option value="elfo">Elfo</option>
+                                    <option value="enano">Enano</option>
+                                    <option value="Mediano">Mediano</option>
+                                    <option value="Gnomos">Gnomo</option>
+                                </optgroup>
+                                <optgroup label="Razas Exoticas">
+                                    <option value="Orco">Orco</option>
+                                    <option value="Semielfos">Semielfo</option>
+                                    <option value="Tiflins">Tiflin</option>
+                                    <option value="Dacronidos">Dacronido</option>
+                                    <option value="Medio-Orcos">Medio-Orco</option>
+                                    <option value="Aasimar">Aasimar</option>
+                                </optgroup>
+                                <optgroup label="Razas Adicionales o Opcionales">
+                                    <option value="Genasi">Genasi</option>
+                                    <option value="Firbolgs">Firbolg</option>
+                                    <option value="Gith">Gith</option>
+                                    <option value="Tabaxi">Tabaxi</option>
+                                    <option value="Kenku">Kenku</option>
+                               </optgroup>
+                               <optgroup label="Razas De Tasha's Cauldron Of Everything Y Monsters Of The Multiverse">
+                                <option value="Hadozee">Hadozee</option>
+                                <option value="Hobgoblins">Hobgoblins</option>
+                                <option value="Loxodones">Loxodones</option>
+                                <option value="Yuan-ti">Yuan-ti</option>
+                               </optgroup>
+                            </select>
+                            
+                        </div>
                     </div>
                     <!-------------------- Sección de Labels ------------------>
                     <div class="Text_formulario">
                        
-                        <label for="raza">Raza:</label><br>
+                        
                         <label for="clase">Clase:</label><br>
                         <label for="descripcion">Historia Del Personaje:</label><br>
                     </div>
                     <!-------------------- Sección de inputs ------------------>
                     <div class="formulario">
-                        <select id="raza" name="raza">
-                            <optgroup label="Razas Clasicas">
-                                <option value="humano">Humano</option>
-                                <option value="elfo">Elfo</option>
-                                <option value="enano">Enano</option>
-                                <option value="Mediano">Mediano</option>
-                                <option value="Gnomos">Gnomo</option>
-                            </optgroup>
-                            <optgroup label="Razas Exoticas">
-                                <option value="Orco">Orco</option>
-                                <option value="Semielfos">Semielfo</option>
-                                <option value="Tiflins">Tiflin</option>
-                                <option value="Dacronidos">Dacronido</option>
-                                <option value="Medio-Orcos">Medio-Orco</option>
-                                <option value="Aasimar">Aasimar</option>
-                            </optgroup>
-                            <optgroup label="Razas Adicionales o Opcionales">
-                                <option value="Genasi">Genasi</option>
-                                <option value="Firbolgs">Firbolg</option>
-                                <option value="Gith">Gith</option>
-                                <option value="Tabaxi">Tabaxi</option>
-                                <option value="Kenku">Kenku</option>
-                           </optgroup>
-                           <optgroup label="Razas De Tasha's Cauldron Of Everything Y Monsters Of The Multiverse">
-                            <option value="Hadozee">Hadozee</option>
-                            <option value="Hobgoblins">Hobgoblins</option>
-                            <option value="Loxodones">Loxodones</option>
-                            <option value="Yuan-ti">Yuan-ti</option>
-                           </optgroup>
-                        </select><br>
+                       
 
                         <select id="clase" name="clase">
                         <optgroup label="Tanques">
@@ -150,9 +169,9 @@
 </div>
 
     <div id="Creacion_Pa" class="content-section">
-        <div class="Cuadricula">
-            <h2 class="Encabezado">Creación de Partida</h2>
-            <div class="Contenido">
+        <div class="Cuadricula_inicio">
+            <h2 class="Encabezado_inicio">Creación de Partida</h2>
+            <div class="Contenido_inicio">
                 <form>
                     <label for="Partida-nombre">Nombre De Partida:</label>
                     <input type="text" id="Partida-nombre" name="Partida-nombre" required><br>
