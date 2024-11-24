@@ -24,8 +24,8 @@
     display: flex;
     background: #3B3C40;
     padding: 1px;
-    justify-content: start;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .nav-button {
@@ -64,6 +64,7 @@ body{
     width: 100vw;
     margin: 0px;
     overflow: hidden;
+    height: 94.6vh;
 
 }
 .ContenidoBienvenida{
@@ -84,7 +85,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    background-attachment: fixed;
+    
     
 }
 
@@ -164,23 +165,19 @@ ul {
   
   .example-2 .icon-content a[data-social="discord"] .filled,
   .example-2 .icon-content a[data-social="discord"] ~ .tooltip {
-    background-color: #7289da;
+    background-color: #5869a6;
   }
   
-  .example-2 .icon-content a[data-social="steam"] .filled,
-  .example-2 .icon-content a[data-social="steam"] ~ .tooltip {
-    background-color: #171d25;
-  }
   .example-2 .icon-content a[data-social="instagram"] .filled,
   .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
     background: linear-gradient(
       45deg,
-      #405de6,
-      #5b51db,
-      #b33ab4,
-      #c135b4,
-      #e1306c,
-      #fd1f1f
+      #364ec4,
+      #5048c3,
+      #983198,
+      #a42d98,
+      #b72757,
+      #c81b1b
     );
   }
   .example-2 .icon-content a[data-social="youtube"] .filled,
