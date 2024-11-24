@@ -15,5 +15,5 @@ function mostrarContenido(seccionId) {
 
 // Muestra la sección "Inicio" por defecto al cargar la página
 window.onload = function() {
-    mostrarContenido('inicio');
+    mostrarContenido('Bienvenida');
 };
