@@ -56,7 +56,7 @@ h2{
 
 body{
     margin: 0px;
-    background-color: #D9C5A0;
+    background-color: #F2F2F2;
 }
 
 /*----------------------Estilos De Bienvenida-------------*/
@@ -64,7 +64,7 @@ body{
     width: 100vw;
     margin: 0px;
     overflow: hidden;
-    height: 94.6vh;
+    height: 96vh;
 
 }
 .ContenidoBienvenida{
@@ -85,7 +85,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    
     
 }
 
@@ -108,7 +107,7 @@ ul {
   }
   .example-2 .icon-content .tooltip {
     position: absolute;
-    top: -30px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
@@ -134,7 +133,7 @@ ul {
     height: 50px;
     border-radius: 50%;
     color: white;
-    background-color: #A6A6A6;
+    background-color: #32c5fa8b;
     transition: all 0.3s ease-in-out;
   }
   .example-2 .icon-content a:hover {
@@ -185,21 +184,28 @@ ul {
     background-color: #ff0000;
   }
   
-/*----------------------Estilos de inicio-----------------*/
+/*----------------------Estilos de Descubre-----------------*/
 .Cuadricula{
     display: grid;
     grid-template-rows: 35% 65%;
     gap: .5em;
 }
 .Encabezado{
-    grid-row: 1;
     display:flex;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('Taberna1.jpeg');
+    grid-row: 1;
     justify-content: center;
     background-position: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+    background-size: contain;
+    height: 100%;
+}
+.Imagen_Fondo{
+  grid-row: 1;
+  background-image: url('Taberna1.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
 }
 .Text_Bienvenida{
     display: flex;
@@ -213,18 +219,27 @@ ul {
 }
 .Cuerpo{
     grid-row: 2;
-    margin: 1vh;
-    
+
+}
+.Contenido_Descubre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .Text_Contenido{
     padding: 10px;
-    color: #593B49;
-   
-    border-radius: 10px;
-    
     font-size: 20px;
     text-align: center;
-    max-width: 100%;
+    max-width: 90%;
+}
+.Imagenes_Adorno{
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+.imgen{
+  width: 20vw;
+  height: 8vw;
 }
 
 /*-------------------- Estilos de creacion de personaje-----------------------*/
