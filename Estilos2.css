@@ -64,7 +64,7 @@ body{
     width: 100vw;
     margin: 0px;
     overflow: hidden;
-    height: 96vh;
+    height: 100vh;
 
 }
 .ContenidoBienvenida{
@@ -78,7 +78,6 @@ body{
     font-size: 4vh;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
-    
 }
 .Fondo_Bienvenida{
     background-image: url('Cabañas2.jpeg');
@@ -241,8 +240,63 @@ ul {
   width: 20vw;
   height: 8vw;
 }
+.Accesos{
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Botones_Descubre1{
+  grid-column: 1;
+}
+.Botones_Descubre12{
+  grid-column: 2;
+}
+.Botones_Descubre2{
+  grid-column: 3 4;
+}
+.icon-button1 {
+  width: 15vw;
+  height: 15VW;
+  margin: 5px;
+  background-color: #FF5733;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+.icon-button1:hover {
+  background-color: #C44127;
+}
+.icon-button2{
+  width: 30vw;
+  height: 30.62VW;
+  margin: 5px;
+  background-color: #FF5733;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
 
 /*-------------------- Estilos de creacion de personaje-----------------------*/
+.Imagen_Fondo2{
+  grid-row: 1;
+  background-image: url('Armario.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
 .Botones {
     display: flex;
     max-width: 100%;
