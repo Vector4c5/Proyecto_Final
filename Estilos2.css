@@ -264,10 +264,21 @@ ul {
   width: 30%;
 }
 
+.Tex_Button_Descubre{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+    color: white; /* Texto blanco */
+    font-size: 18px;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    border-radius: 0px 0px 20px 20px; /* Ajusta bordes redondeados solo abajo */
+}
+
 .icon-button {
-  width: 15vw;
-  height: 15VW;
-  margin: 8px;
+  width: 14.7vw;
+  height: 14.7VW;
+  margin: 6px;
   background-color: #FF5733;
   color: white;
   text-decoration: none;
@@ -279,13 +290,14 @@ ul {
   display: inline-block;
   cursor: pointer;
   font-family: Arial, sans-serif;
+  position: relative;
   overflow: hidden;
 }
 
 .icon-button2{
   width: 30vw;
-  height: 31VW;
-  margin: 1px;
+  height: 30VW;
+  margin: 0px;
   background-color: #FF5733;
   color: white;
   text-decoration: none;
@@ -297,6 +309,7 @@ ul {
   display: inline-block;
   cursor: pointer;
   font-family: Arial, sans-serif;
+  position: relative;
   overflow: hidden;
   }
 
@@ -344,6 +357,18 @@ ul {
   transition: background-size .5s ease;
 }
 .Fondo_Dados:hover{
+  background-size: 105%;
+  transition: all .5s ease;
+}
+
+.Fondo_Comunidad{
+  background-image: url('Logo_Discord.jpeg');
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease;
+}
+.Fondo_Comunidad:hover{
   background-size: 105%;
   transition: all .5s ease;
 }
