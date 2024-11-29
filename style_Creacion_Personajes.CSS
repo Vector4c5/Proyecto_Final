@@ -1,0 +1,73 @@
+/*-------------------- Estilos de creacion de personaje-----------------------*/
+.Imagen_Fondo2{
+    grid-row: 1;
+    background-image: url('/imagenes/Armario.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+  
+  .Botones {
+      display: flex;
+      max-width: 100%;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      padding: 15px;
+  }
+  
+  /* Botón */
+  .btn {
+      margin: 5px;
+      width: 30%; /* Ajusta el tamaño del botón */
+      height: 200px; /* Altura del botón */
+      background-size: cover; /* Imagen de fondo ocupa todo el botón */
+      background-position: center; /* Centra la imagen de fondo */
+      border-radius: 20px;
+      font-size: 18px;
+      color: white;
+      text-decoration: none; /* Quita subrayados */
+      display: flex;
+      flex-direction: column; /* Alinea contenido en columna */
+      justify-content: flex-end; /* Lleva el contenido (texto) al fondo */
+      align-items: center; /* Centra horizontalmente el texto */
+      position: relative; /* Necesario para posicionar el texto correctamente */
+      overflow: hidden; /* Esconde cualquier contenido fuera de los bordes */
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1), -5px -5px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      background-color: white;
+  }
+  
+  /* Fondo negro para el texto */
+  .Tex_Button {
+      width: 100%; /* Ocupa todo el ancho del botón */
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+      color: white; /* Texto blanco */
+      font-size: 18px;
+      text-align: center;
+      position: absolute;
+      bottom: 0; /* Ancla el texto al fondo del botón */
+      left: 0; /* Se alinea al borde izquierdo */
+      border-radius: 0px 0px 20px 20px; /* Ajusta bordes redondeados solo abajo */
+  }
+  
+  .Fondo_DnD {
+      background-image: url('/imagenes/SimboloD&D.jpg'); 
+      background-size: cover; 
+      background-position: center; /* Centra la imagen */
+  }
+  
+  .Fonto_Warhammer{
+      background-image: url('/imagenes/SimboloWarhammer.png'); 
+      background-size: cover; 
+      background-position: center;
+  }
+  
+  .btn:hover {
+      transform: scale(1.2); /* Escala el botón al pasar el mouse */
+      z-index: 1;
+  }
+  
+  
