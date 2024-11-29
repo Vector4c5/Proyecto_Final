@@ -10,12 +10,20 @@ body{
     margin: 0px;
     background-color: black;
 }
+.Titulo{
+    margin: 30px;
+    font-family: "Modern Antiqua", serif;
+    align-items: flex-start;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
 .Fondo_Por_Defecto{
-  background-image: url('Caberna_Enlaces.jpeg'); /* Ruta a tu imagen */
+  background-image: url('/imagenes/Caberna_Enlaces.jpeg'); /* Ruta a tu imagen */
   background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center center; 
-height: 100vh;
+  height: 100vh;
 
 }
 .Cuerpo{
@@ -25,8 +33,8 @@ height: 100vh;
     justify-content: center;
 }
 .Botones_Enlaces{
-  width: 30vw;
-  height: 7vw;
+  width: 70vh;
+  height: 15vh;
   margin: 8px;
   background-color: #FF5733;
   color: white;
@@ -93,4 +101,91 @@ height: 100vh;
     transform: scale(1.1);
     background: radial-gradient(circle,rgb(247, 52, 230), purple);
     transition: all .5s ease;
+}
+@media (max-width: 768px) {
+    .Titulo{
+        margin: 30px;
+        font-family: "Modern Antiqua", serif;
+        text-align: center;
+        font-size: 6vw;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+    .Botones_Enlaces{
+        width: 50vh;
+        height: 15vh;
+        margin: 8px;
+        background-color: #FF5733;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        border: 2.5px solid black;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1), -3px -3px 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center; /* Alinea el contenido hacia abajo */
+        justify-content: center; /* Centra el contenido horizontalmente */
+        position: relative; /* Necesario para la posición absoluta de los textos */
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+      }
+      .tex_Button{
+        font-family: "Modern Antiqua", serif;
+        position: absolute;
+        font-size: 4vh;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+      }
+    .background_Discord{
+        background: radial-gradient(circle, #8f9dcccb, #5869a6);
+        transition: transform 0.5s ease;
+    }
+    .background_Discord:hover{
+        transform: scale(1.1);
+        background: radial-gradient(circle, #8f9dcc, #5869a6);
+        transition: all .5s ease;
+    }
+    .background_Instagram{
+        background: linear-gradient(
+          45deg,
+          #364ec4bb,
+          #5048c3bb,
+          #983198bb,
+          #a42d98bb,
+          #b72757bb,
+          #c81b1bbb
+        );
+        transition: transform 0.5s ease;
+    }
+    .background_Instagram:hover{
+        transform: scale(1.1);
+        background: linear-gradient(
+            45deg,
+            #364ec4,
+            #5048c3,
+            #983198,
+            #a42d98,
+            #b72757,
+            #c81b1b
+          );
+        transition: all .5s ease;
+    }
+    .background_twitter{
+        background: radial-gradient(circle, #84B9BFbb, #32838Cbb);
+        transition: transform 0.5s ease;
+    }
+    .background_twitter:hover{
+        transform: scale(1.1);
+        background: radial-gradient(circle, #84B9BF, #32838C);
+        transition: all .5s ease;
+    }
+    .background_Whatsap{
+        background: radial-gradient(circle, #2EF273bb, #2BD968bb);
+        transition: transform 0.5s ease;
+    }
+    .background_Whatsap:hover{
+        transform: scale(1.1);
+        background: radial-gradient(circle, #2EF273, #2BD968);
+        transition: all .5s ease;
+    }
 }
