@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Modern+Antiqua&family=Skranji:wght@400;700&display=swap');
+
 /*-------------------- Estilos de creacion de personaje-----------------------*/
 .Imagen_Fondo2{
     grid-row: 1;
@@ -6,25 +8,99 @@
     background-repeat: no-repeat;
     background-position: center; 
   }
-  
+  .Encabezado{
+    display:flex;
+    grid-row: 1;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    background-color: rgba(0, 0, 0, .3);
+    background-size: contain;
+    height: 25vh;
+}
+.Cuerpo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Text_Contenido_CreacionP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Text_Bienvenida{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color:aliceblue;
+    text-shadow: 2px 2px 6px black;
+    font-size: 6vh;
+    gap: 4px;
+}
+/* From Uiverse.io by alexruix */ 
+.group {
+    margin: 20px;
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 40vw;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #7948C5;
+    background-color: #ffffff;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: rgba(0, 0, 0, 0.578);
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(155, 76, 234, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(184, 76, 234, 50%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+
   .Botones {
       display: flex;
-      max-width: 100%;
       width: 100%;
       justify-content: center;
       flex-wrap: wrap;
-      align-content: center;
-      padding: 15px;
   }
   
   /* Botón */
   .btn {
-      margin: 5px;
-      width: 30%; /* Ajusta el tamaño del botón */
+      margin: 10px;
+      width: 50vh; /* Ajusta el tamaño del botón */
       height: 200px; /* Altura del botón */
       background-size: cover; /* Imagen de fondo ocupa todo el botón */
       background-position: center; /* Centra la imagen de fondo */
       border-radius: 20px;
+      border: 2px solid #7948C5;
       font-size: 18px;
       color: white;
       text-decoration: none; /* Quita subrayados */
@@ -34,7 +110,7 @@
       align-items: center; /* Centra horizontalmente el texto */
       position: relative; /* Necesario para posicionar el texto correctamente */
       overflow: hidden; /* Esconde cualquier contenido fuera de los bordes */
-      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1), -5px -5px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.5), -8px -8px 12px rgba(0, 0, 0, 0.6);
       transition: transform 0.3s ease;
       background-color: white;
   }
@@ -42,10 +118,12 @@
   /* Fondo negro para el texto */
   .Tex_Button {
       width: 100%; /* Ocupa todo el ancho del botón */
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+      height: 30px;
+      padding: 5px;
+      background: radial-gradient(circle, #3f035996, #69168cb9, #3c3473b2, #022340b5);
       color: white; /* Texto blanco */
       font-size: 18px;
+      font-family: "Skranji", system-ui;
       text-align: center;
       position: absolute;
       bottom: 0; /* Ancla el texto al fondo del botón */
@@ -54,13 +132,13 @@
   }
   
   .Fondo_DnD {
-      background-image: url('/imagenes/SimboloD&D.jpg'); 
+      background-image: url('/imagenes/Logo_D&D.jpeg'); 
       background-size: cover; 
       background-position: center; /* Centra la imagen */
   }
   
   .Fonto_Warhammer{
-      background-image: url('/imagenes/SimboloWarhammer.png'); 
+      background-image: url('/imagenes/Logo_Warhamer40K.jpeg'); 
       background-size: cover; 
       background-position: center;
   }
@@ -69,5 +147,34 @@
       transform: scale(1.2); /* Escala el botón al pasar el mouse */
       z-index: 1;
   }
+  .Enlaces{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 62px;
+    margin: 30px;
+    background: radial-gradient(circle, #3f0359d7, #69168ccb, #3c3473b6);
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: .5s ease;
+  }
+  .Botton_Enlaces{
+  width: 100%;
+  text-decoration: none;
+  color: white; /* Texto blanco */
+  font-size: 20px;
+  font-family: "Modern Antiqua", serif;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+  }
+  .Enlaces:hover{
+    scale: 1.1;
+    background: radial-gradient(circle, #3f0359, #69168c, #3c3473);
+    transition: all .5s ease;
+  }
+
+
   
   
