@@ -132,13 +132,13 @@
   }
   
   .Fondo_DnD {
-      background-image: url('/imagenes/Logo_D&D.jpeg'); 
+      background-image: url('./imagenes/Logo_D&D.jpeg'); 
       background-size: cover; 
       background-position: center; /* Centra la imagen */
   }
   
   .Fonto_Warhammer{
-      background-image: url('/imagenes/Logo_Warhamer40K.jpeg'); 
+      background-image: url('./imagenes/Logo_Warhamer40K.jpeg'); 
       background-size: cover; 
       background-position: center;
   }
