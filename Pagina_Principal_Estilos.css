@@ -79,7 +79,7 @@ body{
   background-color: rgba(0, 0, 0, 0.3);
 }
 .Fondo_Bienvenida{
-  background-image: url('/imagenes/Cabañas2.jpeg');
+  background-image: url('./imagenes/Cabañas2.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
