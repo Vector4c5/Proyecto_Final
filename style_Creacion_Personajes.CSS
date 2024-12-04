@@ -3,7 +3,7 @@
 /*-------------------- Estilos de creacion de personaje-----------------------*/
 .Imagen_Fondo2{
     grid-row: 1;
-    background-image: url('/imagenes/Armario.jpeg');
+    background-image: url('./imagenes/Armario.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 

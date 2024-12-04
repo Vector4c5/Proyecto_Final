@@ -50,7 +50,7 @@ body{
     background-color: black;
 }
 .Fondo_Por_Defecto{
-  background-image: url('/imagenes/Noche_Estrellada2.jpeg'); /* Ruta a tu imagen */
+  background-image: url('./imagenes/Noche_Estrellada2.jpeg'); /* Ruta a tu imagen */
   background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center center; 
