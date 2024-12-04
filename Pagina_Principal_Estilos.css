@@ -50,7 +50,7 @@ body{
     background-color: black;
 }
 .Fondo_Por_Defecto{
-  background-image: url('/imagenes/Noche_Estrellada2.jpeg'); /* Ruta a tu imagen */
+  background-image: url('./imagenes/Noche_Estrellada2.jpeg'); /* Ruta a tu imagen */
   background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center center; 
@@ -78,12 +78,7 @@ body{
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.Fondo_Bienvenida{
-  background-image: url('/imagenes/Cabañas2.jpeg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; 
-}
+
 
 .Parrafos{
     margin-bottom: 30px;
@@ -181,5 +176,17 @@ ul {
     background-color: #ff0000;
   }
   
-
+  @media (max-width: 768px) {
+  .nav-button {
+    color: white;
+    background: none;
+    border: 2px solid transparent;
+    padding: 9px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+}
 
