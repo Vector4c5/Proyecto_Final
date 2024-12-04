@@ -18,6 +18,10 @@
     background-size: contain;
     height: 25vh;
 }
+.centrado{
+    display: flex;
+    align-items: center;
+}
 .Cuerpo{
     display: flex;
     position: relative;
@@ -63,7 +67,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    width: 100%;
+    width: 1500px;
     margin-top: 20px;
 }
 
