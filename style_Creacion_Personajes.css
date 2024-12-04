@@ -186,6 +186,12 @@
         font-size: 4vh;
         gap: 4px;
   }
+  .Botones {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 }
   
