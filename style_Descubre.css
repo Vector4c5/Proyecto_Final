@@ -313,10 +313,21 @@ body {
     font-size: 3vh;
     gap: 4px;
 }
+.Text_Contenido{
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid #7948C5;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1), -5px -5px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  max-width: 82%;
+}
   .Accesos_Descubre {
     display: flex;
     align-content: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap: nowrap;
     min-width: 85%;
   

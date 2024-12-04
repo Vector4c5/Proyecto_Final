@@ -46,3 +46,174 @@
     text-align: center;
     max-width: 72%;
 }
+
+/* Contenedor de botones principal */
+.Botones_Partidas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor para los últimos dos botones */
+.Ultimos_Botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Ultimos_Botones .Boton_Partida {
+    width: 35%;
+}
+
+/* Estilo base del botón */
+.Boton_Partida {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid #7948C5;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    display: block;
+}
+
+/* Fondo inicial del botón */
+.Boton_Partida::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./imagenes/Portal.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+/* Imagen de fondo oculta */
+.Boton_Partida::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Clases para las diferentes imágenes de fondo */
+.Fondo_Crear::after {
+    background-image: url('./imagenes/Vela.jpeg');
+}
+
+.Fondo_Explorar::after {
+    background-image: url('./imagenes/Exploradores.jpeg');
+}
+
+.Fondo_Bestiario::after {
+    background-image: url('./imagenes/Bestiario.jpeg');
+}
+
+.Fondo_Mapas::after {
+    background-image: url('./imagenes/Mapas.jpeg');
+}
+
+.Fondo_Libros::after {
+    background-image: url('./imagenes/Libros.jpeg');
+}
+
+.Fondo_Tutoriales::after {
+    background-image: url('./imagenes/Mesa_Redonda.jpeg');
+}
+
+.Fondo_Comunidad::after {
+    background-image: url('./imagenes/Logo_Discord.jpeg');
+}
+
+.Fondo_Eventos::after {
+    background-image: url('./imagenes/Eventos.jpeg');
+}
+
+/* Texto del botón */
+.Texto_Boton_Partida {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: white;
+    background: radial-gradient(circle, #3f035996, #69168cb9, #3c3473b2, #022340b5);
+    font-family: "Skranji", system-ui;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+/* Efectos hover */
+.Boton_Partida:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(121, 72, 197, 0.6);
+}
+
+.Boton_Partida:hover::before {
+    opacity: 0.2;
+}
+
+.Boton_Partida:hover::after {
+    opacity: 1;
+}
+
+.Boton_Partida:hover .Texto_Boton_Partida {
+    transform: translateY(0);
+    background: radial-gradient(circle, #3f0359e6, #69168ce6, #3c3473e6, #022340e6);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .Botones_Partidas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 95%;
+    }
+    
+    .Boton_Partida {
+        height: 120px;
+    }
+
+    .Ultimos_Botones {
+        flex-direction: column;
+        align-items: center;
+        width: 88%;
+    }
+
+    .Ultimos_Botones .Boton_Partida {
+        width: 100%;
+    }
+    
+    .Texto_Boton_Partida {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Botones_Partidas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

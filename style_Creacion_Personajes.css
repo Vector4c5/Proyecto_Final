@@ -147,6 +147,11 @@
       transform: scale(1.2); /* Escala el botón al pasar el mouse */
       z-index: 1;
   }
+  .Fondo_EstamosTrabajando{
+    background-image: url('./imagenes/Estamos_Trabajando2.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+  }
   .Enlaces{
     display: flex;
     flex-direction: column;
@@ -193,5 +198,37 @@
     flex-wrap: wrap;
 }
 
+}
+  
+/* Estilo para el botón de agregar personajes */
+.btn-agregar {
+    background: linear-gradient(45deg, #3f0359, #69168c, #3c3473);
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; /* Espacio adicional arriba para separarlo */
+    max-width: 80%; /* Hacer el botón más ancho que los demás */
+    border: 3px solid #7948C5;
+}
+.Fonto_Mas{
+    background-image: url('./imagenes/Signo_mas5.jpeg'); 
+    background-size: cover; 
+    background-position: center center;
+}
+
+.btn-agregar::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .btn-agregar {
+        width: 90%;
+    }
 }
   
