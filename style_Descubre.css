@@ -90,7 +90,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: visible;
+  width: 100%;
+  gap: 20px;
 }
 .Text_Contenido{
   background-color: white;
@@ -108,6 +109,7 @@ body {
   margin-bottom: 10px;
 }
 .Contenedor_Publicaciones {
+  order: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,6 +120,7 @@ body {
   margin: 20px;
   width: 50%;
   max-width: 600px;
+  margin-top: 20px;
 }
 
 .Input_Publicacion {
@@ -168,6 +171,7 @@ body {
 }
 
 .Accesos_Descubre {
+  order: 1;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -365,6 +369,13 @@ body {
   }
   .Tex_Button_Descubre{
     font-size: 15px;
+  }
+  .Contenedor_Publicaciones {
+    width: 85%;
+  }
+  .Accesos_Descubre {
+    min-width: 85%;
+    height: auto;
   }
   }
 
