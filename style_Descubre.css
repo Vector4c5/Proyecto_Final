@@ -238,61 +238,61 @@ body {
 
 .Fondo_Novedades{
  background-image: url('./imagenes/Tablero_Anuncios3.jpeg');
- background-size: 100%; 
+ background-size: 100% 100%; 
  background-position: center;
  background-repeat: no-repeat;
  transition: background-size .5s ease;
 }
 .Fondo_Novedades:hover{
-  background-size: 105%;
+  background-size: 105% 105%;
   transition: all .5s ease;
 }
 
 .Fondo_Aprende_Jugar{
   background-image: url('./imagenes/Mesa_Redonda.jpeg');
-  background-size: 100%; 
+  background-size: 100% 100%; 
   background-position: center;
   background-repeat: no-repeat;
   transition: background-size .5s ease;
 }
 .Fondo_Aprende_Jugar:hover{
-  background-size: 105%;
+  background-size: 105% 105%;
   transition: all .5s ease;
 }
 
 .Fondo_Personajes{
   background-image: url('./imagenes/Vestuario.jpeg');
-  background-size: 100%; 
+  background-size: 100% 100%; 
   background-position: center;
   background-repeat: no-repeat;
   transition: background-size .5s ease;
 }
 .Fondo_Personajes:hover{
-  background-size: 105%;
+  background-size: 105% 105%;
   transition: all .5s ease;
 }
 
 .Fondo_Dados{
   background-image: url('./imagenes/Dados.jpeg');
-  background-size: 100%; 
+  background-size: 100% 100%; 
   background-position: center;
   background-repeat: no-repeat;
   transition: background-size .5s ease;
 }
 .Fondo_Dados:hover{
-  background-size: 105%;
+  background-size: 105% 105%;
   transition: all .5s ease;
 }
 
 .Fondo_Comunidad{
   background-image: url('./imagenes/Logo_Discord.jpeg');
-  background-size: 100%; 
+  background-size: 100% 100%; /* Ajusta la imagen para cubrir todo el contenedor */
   background-position: center;
   background-repeat: no-repeat;
   transition: background-size .5s ease;
 }
 .Fondo_Comunidad:hover{
-  background-size: 105%;
+  background-size: 105% 105%; /* Mantiene la proporción en el hover */
   transition: all .5s ease;
 }
 .Degradado1{
