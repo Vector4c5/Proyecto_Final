@@ -57,7 +57,12 @@ body{
   min-height: 100vw;;
   background-attachment: fixed;
 }
-
+.Fondo_Bienvenida{
+  background-image: url('./imagenes/Cabañas2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
 /*----------------------Estilos De Bienvenida-------------*/
 #Bienvenida{
     width: 100vw;
