@@ -1,21 +1,64 @@
+/* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Modern+Antiqua&family=Skranji:wght@400;700&display=swap');
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#Descubre {
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura del viewport */
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.Fondo_Por_Defecto {
+  background-image: url('/imagenes/Noche_Estrellada2.jpeg'); /* Ruta a tu imagen */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center;
+  min-height: 100vh; /* Cambia 100vw por 100vh */
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+
 
 /*----------------------Estilos de Descubre-----------------*/
 .Cuadricula{
-    display: grid;
-    grid-template-rows: 35% 65%;
-   
+    position: relative;
+    display: block;
+    min-height: 100vh;
+    z-index: 1;
+    
 }
 .Encabezado{
-    display:flex;
-    grid-row: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 35vh;
+    display: flex;
     justify-content: center;
     background-position: center;
     align-items: center;
     border-bottom: 3px solid black;
     background-color: rgba(0, 0, 0, .3);
     background-size: contain;
-    height: 100%;
+   
 }
 .Imagen_Fondo{
   grid-row: 1;
@@ -33,16 +76,21 @@
     font-size: 4vh;
     gap: 4px;
 }
-.Cuerpo{
-    grid-row: 2;
-    height: 100vh;
 
+.Cuerpo{
+  margin: 10px;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding-top: 20px;
 }
 .Contenido_Descubre{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: inherit;
+  overflow: visible;
 }
 .Text_Contenido{
   background-color: white;
@@ -118,10 +166,7 @@
   max-width: 100%;
   justify-content: center;
 }
-.imgen{
-  width: 20vw;
-  height: 8vw;
-}
+
 .Accesos_Descubre {
   display: flex;
   flex-direction: row;
@@ -255,6 +300,15 @@
 }
 @media (max-width: 768px) {
 
+  .Text_Bienvenida{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color:aliceblue;
+    text-shadow: 2px 2px 6px black;
+    font-size: 3vh;
+    gap: 4px;
+}
   .Accesos_Descubre {
     display: flex;
     align-content: center;
@@ -313,3 +367,4 @@
     font-size: 15px;
   }
   }
+
